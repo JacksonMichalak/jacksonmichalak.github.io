@@ -1,0 +1,46 @@
+:root,
+[data-bs-theme="light"] {
+    --#{$prefix}avatar-border:              #{$white};
+
+    --#{$prefix}text-mode:                  var(--#{$prefix}dark);
+    --#{$prefix}text-mode-re:                  var(--#{$prefix}white);
+
+    --#{$prefix}footer-link-color:          rgba(var(--#{$prefix}dark-rgb), 0.75);
+    --#{$prefix}footer-link-color-hover:    var(--#{$prefix}dark);
+
+    --#{$prefix}gray-100-rgb:   #{to-rgb($gray-100)};
+    --#{$prefix}gray-200-rgb:   #{to-rgb($gray-200)};
+    --#{$prefix}gray-300-rgb:   #{to-rgb($gray-300)};
+    --#{$prefix}gray-400-rgb:   #{to-rgb($gray-400)};
+    --#{$prefix}gray-500-rgb:   #{to-rgb($gray-500)};
+    --#{$prefix}gray-600-rgb:   #{to-rgb($gray-600)};
+    --#{$prefix}gray-700-rgb:   #{to-rgb($gray-700)};
+    --#{$prefix}gray-800-rgb:   #{to-rgb($gray-800)};
+    --#{$prefix}gray-900-rgb:   #{to-rgb($gray-900)};
+
+}
+
+@if $enable-dark-mode {
+    @include color-mode(dark, true) {
+        --#{$prefix}gray-100:   #{$dark-gray-100};
+        --#{$prefix}gray-200:   #{$dark-gray-200};
+        --#{$prefix}gray-300:   #{$dark-gray-300};
+        --#{$prefix}gray-400:   #{$dark-gray-400};
+        --#{$prefix}gray-500:   #{$dark-gray-500};
+        --#{$prefix}gray-600:   #{$dark-gray-600};
+        --#{$prefix}gray-700:   #{$dark-gray-700};
+        --#{$prefix}gray-800:   #{$dark-gray-800};
+        --#{$prefix}gray-900:   #{$dark-gray-900};
+        
+        --#{$prefix}avatar-border:              #{$dark};
+
+
+        --#{$prefix}footer-link-color:          rgba(var(--#{$prefix}white-rgb), 0.75);
+        --#{$prefix}footer-link-color-hover:    var(--#{$prefix}white);
+
+        --#{$prefix}text-mode:                  var(--#{$prefix}white);
+        --#{$prefix}text-mode-re:                  var(--#{$prefix}dark);
+
+
+    }
+}
