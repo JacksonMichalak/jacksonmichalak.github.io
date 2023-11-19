@@ -6498,8 +6498,8 @@ textarea.form-control-lg {
     --bs-pagination-focus-bg: var(--bs-secondary-bg);
     --bs-pagination-focus-box-shadow: unset;
     --bs-pagination-active-color: #fff;
-    --bs-pagination-active-bg: #0066ff;
-    --bs-pagination-active-border-color: #0066ff;
+    --bs-pagination-active-bg: var(--bs-warning);
+    --bs-pagination-active-border-color: var(--bs-warning);
     --bs-pagination-disabled-color: var(--bs-secondary-color);
     --bs-pagination-disabled-bg: var(--bs-secondary-bg);
     --bs-pagination-disabled-border-color: var(--bs-border-color);
@@ -26113,7 +26113,7 @@ img {
 
 .tab-style-5 .nav-tabs .nav-item > a.active {
     color: var(--bs-white);
-    background: var(--bs-primary);
+    background: var(--bs-warning);
 }
 
 .tab-style-6 .nav-tabs .nav-item + .nav-item {
@@ -26156,22 +26156,22 @@ img {
 }
 
 .tab-style-7 .nav-tabs .nav-item .nav-link .icon-sm {
-    background: var(--bs-primary);
+    background: var(--bs-warning);
     color: var(--bs-white);
 }
 
 .tab-style-7 .nav-tabs .nav-item .nav-link.active {
-    background: var(--bs-primary);
-    color: var(--bs-white);
+    background: var(--bs-warning);
+    color: var(--bs-dark);
 }
 
 .tab-style-7 .nav-tabs .nav-item .nav-link.active h6, .tab-style-7 .nav-tabs .nav-item .nav-link.active .h6 {
-    color: var(--bs-white);
+    color: var(--bs-dark);
 }
 
 .tab-style-7 .nav-tabs .nav-item .nav-link.active .icon-sm {
     background: var(--bs-white);
-    color: var(--bs-primary);
+    color: var(--bs-warning);
 }
 
 .tab-style-8 .nav-tabs {
